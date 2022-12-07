@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-white: #FFFFF7;
+    --color-blue-1: #73B1D6;
+    --color-blue-2: #4589B0;
+    --color-blue-3: #1D628B;
+    --color-gray: #444444;
+    --color-black: #000000;
+
+    --font-size-01: 8px;
+    --font-size-02: 10px;
+    --font-size-03: 12px;
+    --font-size-1: 16px;
+    --font-size-2: 18px;
+    --font-size-3: 25px;
+}
+
+body {
+    background-color: var(--color-blue-1);
+    font-family: 'Zen Dots', cursive;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(135deg, #009ddf 0, #1d618b 50%, #152c3f 100%);
+    margin-bottom: 20px;
+}
+.cabecalho nav {
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalho nav .logo {
+
+}
+.cabecalho nav ul {
+    list-style-type: none;
+
+    display: flex;
+}
+.cabecalho nav ul li {
+    color: var(--color-white);
+    font-size: var(--font-size-2);
+}
+
+.banner-start {
+    width: 80%;
+    margin: auto;
+    height: 600px;
+    background-image: linear-gradient(135deg, #698499 0, #497292 25%, #1d618b 50%, #005084 75%, #00407d 100%);
+    border: 5px solid var(--color-gray);
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-start div button {
+    transition: 200ms;
+    color: var(--color-white);
+    font-size: var(--font-size-3);
+    padding: 20px;
+    font-family: inherit;
+    border: none;
+    box-shadow: 0 0 20px #000;
+    border-radius: 15px;
+    background-color: var(--color-blue-3);
+    cursor: pointer;
+}
+.banner-start div button:hover {
+    background-color: #123d56;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #000, 0 0 40px #000;
+}
+.rodape {
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(var(--color-black), var(--color-gray));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.rodape h2 {
+    font-size: var(--font-size-1);
+    color: var(--color-white);
+    letter-spacing: 1.5px;
+    padding-bottom: 6px;
+}
+.rodape h3 {
+    font-size: var(--font-size-1);
+    color: var(--color-blue-1);
+}
+
+.hidden-element {
+    display: none;
+}
