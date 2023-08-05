@@ -45,46 +45,46 @@ body {
   gap: 20px;
 }
 .cabecalho nav ul li a {
+  transition: 200ms;
   color: var(--color-white);
   font-size: 18px;
   text-decoration: none;
 }
-
-.banner-start {
-  width: 80%;
-  margin: auto;
-  height: 600px;
-  background-image: linear-gradient(
-    135deg,
-    #698499 0,
-    #497292 25%,
-    #1d618b 50%,
-    #005084 75%,
-    #00407d 100%
-  );
-  border: 5px solid var(--color-gray);
-  border-radius: 15px;
-
+.cabecalho nav ul li a:hover {
+  color: var(--color-blue-1);
+}
+.product-container {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  background-color: var(--color-blue-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.product-container .title {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+.product-container .product-content {
+  margin-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.product-container .product-content .card {
+  background-color: #152c3f;
+  padding: 20px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
 }
-.banner-start div button {
-  transition: 200ms;
-  color: var(--color-white);
-  font-size: 25px;
-  padding: 20px;
-  font-family: inherit;
-  border: none;
-  box-shadow: 0 0 20px #000;
-  border-radius: 15px;
-  background-color: var(--color-blue-3);
-  cursor: pointer;
-}
-.banner-start div button:hover {
-  background-color: #123d56;
-  transform: scale(1.1);
-  box-shadow: 0 0 20px #000, 0 0 40px #000;
+.product-container .product-content .card .name {
+  color: white;
+  font-size: 20px;
 }
 .rodape {
   width: 100%;
