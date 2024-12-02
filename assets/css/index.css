@@ -1,221 +1,221 @@
-@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 :root {
-  --color-white: #fffff7;
-  --color-blue-1: #73b1d6;
-  --color-blue-2: #4589b0;
-  --color-blue-3: #1d628b;
-  --color-gray: #444444;
-  --color-black: #000000;
+    --color-white: #fffff7;
+    --color-blue-1: #73b1d6;
+    --color-blue-2: #4589b0;
+    --color-blue-3: #1d628b;
+    --color-gray: #444444;
+    --color-black: #000000;
 }
 
 body {
-  background-color: var(--color-blue-1);
-  font-family: "Zen Dots", cursive;
-  min-height: 100vh;
+    background-color: var(--color-blue-1);
+    font-family: 'Zen Dots', cursive;
+    min-height: 100vh;
 }
 
 .cabecalho {
-  width: 100%;
-  padding: 10px 20px;
-  background-image: linear-gradient(
-    135deg,
-    #009ddf 0,
-    #1d618b 50%,
-    #152c3f 100%
-  );
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-image: linear-gradient(
+        135deg,
+        #009ddf 0,
+        #1d618b 50%,
+        #152c3f 100%
+    );
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .cabecalho .logo {
-  font-size: 24px;
-  text-decoration: none;
-  color: var(--color-white);
-  text-shadow: 0 0 5px var(--color-black), 0 0 5px var(--color-black),
-    0 0 5px var(--color-black);
-  cursor: pointer;
-  background-color: var(--color-blue-1);
-  padding: 10px;
-  border-radius: 5px;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--color-white);
+    text-shadow: 0 0 5px var(--color-black), 0 0 5px var(--color-black),
+        0 0 5px var(--color-black);
+    cursor: pointer;
+    background-color: var(--color-blue-1);
+    padding: 10px;
+    border-radius: 5px;
 }
 .cabecalho nav {
-  display: flex;
+    display: flex;
 }
 .cabecalho .hamburger {
-  cursor: pointer;
-  width: 50px;
-  height: 40px;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
 
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .cabecalho nav {
-    display: none;
-  }
-  .cabecalho .hamburger {
-    display: flex;
-  }
+    .cabecalho nav {
+        display: none;
+    }
+    .cabecalho .hamburger {
+        display: flex;
+    }
 }
 .cabecalho .hamburger .line {
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
-  background-color: var(--color-blue-1);
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    background-color: var(--color-blue-1);
 }
 .cabecalho nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
 .cabecalho nav ul li a {
-  transition: 200ms;
-  color: var(--color-white);
-  font-size: 18px;
-  text-decoration: none;
+    transition: 200ms;
+    color: var(--color-white);
+    font-size: 18px;
+    text-decoration: none;
 }
 .cabecalho nav ul li a:hover {
-  color: var(--color-blue-1);
+    color: var(--color-blue-1);
 }
 .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 
-  width: 100%;
-  min-height: 100vh;
-  display: none;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 .menu.active {
-  display: flex;
+    display: flex;
 }
 .menu ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 16px;
-  background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 10px var(--color-black);
-  border-radius: 15px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px var(--color-black);
+    border-radius: 15px;
 }
 .menu ul li a {
-  transition: 200ms;
-  color: var(--color-white);
-  font-size: 20px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  border-radius: 5px;
-  background-color: var(--color-blue-3);
+    transition: 200ms;
+    color: var(--color-white);
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: var(--color-blue-3);
 }
 .menu ul li a:hover {
-  color: var(--color-blue-1);
+    color: var(--color-blue-1);
 }
 .product-container {
-  width: calc(100% - 40px);
-  margin: 0 auto;
-  background-color: var(--color-blue-3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    background-color: var(--color-blue-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
 }
 .product-container .title {
-  color: white;
-  letter-spacing: 2px;
-  font-size: 24px;
-  text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center;
 }
 @media (max-width: 600px) {
-  .product-container .title {
-    font-size: 20px;
-  }
+    .product-container .title {
+        font-size: 20px;
+    }
 }
 .product-container .product-content {
-  margin-top: 40px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 @media (max-width: 1300px) {
-  .product-container .product-content {
-    grid-template-columns: 1fr;
-  }
+    .product-container .product-content {
+        grid-template-columns: 1fr;
+    }
 }
 .product-container .product-content .card {
-  background-color: #152c3f;
-  padding: 20px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-direction: column;
+    background-color: #152c3f;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
 }
 .product-container .product-content .card .name {
-  color: white;
-  font-size: 20px;
+    color: white;
+    font-size: 20px;
 }
 @media (max-width: 760px) {
-  .product-container .product-content .card .name {
-    font-size: 16px;
-    text-align: center;
-  }
+    .product-container .product-content .card .name {
+        font-size: 16px;
+        text-align: center;
+    }
 }
 .product-container .product-content .card .video {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 @media (max-width: 760px) {
-  .product-container .product-content .card .video iframe {
-    width: 100%;
-  }
+    .product-container .product-content .card .video iframe {
+        width: 100%;
+    }
 }
 .rodape {
-  width: 100%;
-  padding: 20px;
-  background-image: linear-gradient(var(--color-black), var(--color-gray));
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(var(--color-black), var(--color-gray));
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
 .rodape h2 {
-  font-size: 16px;
-  color: var(--color-white);
-  letter-spacing: 1.5px;
-  padding-bottom: 6px;
+    font-size: 16px;
+    color: var(--color-white);
+    letter-spacing: 1.5px;
+    padding-bottom: 6px;
 }
 .rodape h3 {
-  font-size: 16px;
-  color: var(--color-blue-1);
+    font-size: 16px;
+    color: var(--color-blue-1);
 }
 @media (max-width: 760px) {
-  .rodape h2 {
-    font-size: 14px;
-  }
-  .rodape h3 {
-    font-size: 12px;
-    color: var(--color-blue-1);
-  }
+    .rodape h2 {
+        font-size: 14px;
+    }
+    .rodape h3 {
+        font-size: 12px;
+        color: var(--color-blue-1);
+    }
 }
 
 .hidden-element {
-  display: none;
+    display: none;
 }
