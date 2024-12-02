@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sobre Nós</title>
+        <link rel="stylesheet" href="../assets/css/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+                <a href="/" class="logo">Pw Exports</a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/pages/about.html">Sobre</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/pages/about.html">Sobre</a></li>
+            </ul>
+        </div>
+
+        <main class="product-container">
+            <h1 class="title">Sobre Nós</h1>
+            <div class="product-content">
+                <div class="about">
+                    <div class="about-content">
+                        <h2 class="name">
+                            Purchaseway Exports: Para Quem Vive a Paixão por
+                            Carros Esportivos
+                        </h2>
+                        <div class="description">
+                            <p>
+                                Se você respira adrenalina e sente o coração
+                                acelerar ao som de um motor potente, a
+                                <strong>Purchaseway Exports</strong> é o lugar
+                                certo para você. Somos uma vitrine dedicada aos
+                                amantes de carros esportivos, oferecendo os
+                                modelos mais incríveis e desejados do mundo.
+                            </p>
+                            <hr />
+                            <h3>Explore Máquinas dos Seus Sonhos</h3>
+                            <p>Aqui você encontra:</p>
+                            <ul>
+                                <li>
+                                    <strong>Superesportivos icônicos</strong>
+                                    como Ferrari, Lamborghini e McLaren.
+                                </li>
+                                <li>
+                                    <strong>Modelos raros e exclusivos</strong>
+                                    que fazem qualquer apaixonado vibrar.
+                                </li>
+                                <li>
+                                    <strong>Designs de tirar o fôlego</strong> e
+                                    performance insuperável.
+                                </li>
+                            </ul>
+                            <hr />
+                            <h3>Por Que a Purchaseway Exports?</h3>
+                            <ul>
+                                <li>
+                                    <strong>Seleção Premium</strong>: Apenas os
+                                    melhores carros esportivos estão aqui.
+                                </li>
+                                <li>
+                                    <strong>Para Verdadeiros Apaixonados</strong
+                                    >: Cada veículo conta uma história e entrega
+                                    emoção em cada detalhe.
+                                </li>
+                                <li>
+                                    <strong>Inspiração e Estilo</strong>:
+                                    Encontre sua próxima paixão sobre rodas.
+                                </li>
+                            </ul>
+                            <hr />
+                            <h3>Descubra o Extraordinário</h3>
+                            <p>
+                                Seja para admirar, conhecer ou escolher o
+                                próximo item da sua coleção, a
+                                <strong>Purchaseway Exports</strong> conecta
+                                você ao que há de melhor no mundo dos carros
+                                esportivos.
+                            </p>
+                            <p>
+                                <strong>Acesse agora e sinta a emoção!</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="rodape">
+            <h2>Purchaseway Exports - 2024</h2>
+            <h3>Todos os Direitos Resevados</h3>
+        </footer>
+
+        <script>
+            const hamburger = document.querySelector('.cabecalho .hamburger')
+            const menu = document.querySelector('.menu')
+
+            hamburger.addEventListener('click', () => {
+                menu.classList.add('active')
+                menu.addEventListener('click', () => {
+                    menu.classList.remove('active')
+                })
+            })
+        </script>
+    </body>
+</html>

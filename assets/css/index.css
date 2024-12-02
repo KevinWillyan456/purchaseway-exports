@@ -107,12 +107,12 @@ body *::selection {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
-
     width: 100%;
     min-height: 100vh;
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 }
 .menu.active {
     display: flex;
@@ -168,6 +168,7 @@ body *::selection {
     gap: 40px;
 }
 .product-content .card {
+    animation: fadeIn 0.5s ease-in-out;
     width: 100%;
     height: clamp(440px, 440px, 440px);
     display: flex;
@@ -295,6 +296,64 @@ body *::selection {
     display: none;
 }
 
+.about {
+    animation: fadeIn 0.5s ease-in-out;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #152c3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.about-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-content .name {
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content .description {
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about-content .description p {
+    margin-bottom: 10px;
+}
+
+.about-content .description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-content .description ul li {
+    margin-bottom: 10px;
+}
+
+.about-content .description hr {
+    border: 1px solid var(--color-blue-1);
+    margin: 20px 0;
+}
+
+.about-content .description h3 {
+    color: var(--color-blue-1);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 600px) {
     .product-container .title {
         font-size: 20px;
@@ -327,6 +386,19 @@ body *::selection {
     .card-video h1 {
         font-size: 14px;
     }
+
+    .about {
+        padding: 20px;
+    }
+    .about-content .name {
+        font-size: 16px;
+    }
+    .about-content .description {
+        font-size: 14px;
+    }
+    .about-content .description h3 {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -357,5 +429,16 @@ body *::selection {
     .card-content,
     .card-video {
         max-width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
