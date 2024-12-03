@@ -118,6 +118,7 @@ body *::selection {
     display: flex;
 }
 .menu ul {
+    animation: fadeIn 0.5s ease-in-out;
     list-style-type: none;
     display: flex;
     flex-direction: column;
