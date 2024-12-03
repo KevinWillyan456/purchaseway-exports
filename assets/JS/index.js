@@ -1,6 +1,8 @@
 const hamburger = document.querySelector('.cabecalho .hamburger')
 const menu = document.querySelector('.menu')
 const productContainer = document.querySelector('.product-content')
+const searchForm = document.querySelector('#search-form')
+const searchInput = document.querySelector('#search-input')
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active')
@@ -38,7 +40,12 @@ const products = [
     },
 ]
 
-function renderProducts(products) {
+function renderProducts(products, message = 'Nenhum veículo cadastrado') {
+    if (products.length === 0) {
+        productContainer.innerHTML = `<p class="no-products">${message}</p>`
+        return
+    }
+
     products.forEach((product) => {
         const article = document.createElement('article')
         article.classList.add('card')
@@ -70,3 +77,18 @@ function renderProducts(products) {
 }
 
 renderProducts(products)
+
+searchForm.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const searchTerm = searchInput.value.toLowerCase().trim()
+    const filteredProducts = products.filter((product) =>
+        product.name.toLowerCase().includes(searchTerm)
+    )
+    productContainer.innerHTML = ''
+    renderProducts(
+        filteredProducts,
+        products.length === 0
+            ? 'Nenhum veículo cadastrado'
+            : `Nenhum veículo encontrado com o termo "${searchTerm}"`
+    )
+})
